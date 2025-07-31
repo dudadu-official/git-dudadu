@@ -1,0 +1,315 @@
+@font-face {
+  font-family: "Cafe24Ohsquare";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333;
+  font-weight: 400;
+  font-family: "Cafe24Ohsquare", "Pretendard", "Roboto";
+  letter-spacing: -0.5px;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont_wrap {
+  max-width: 750px;
+  height: 100%;
+  background: url(../001-the-fool/img/bg_gif.gif) no-repeat;
+  background-size: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+#header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0 12px;
+  margin-bottom: 40px;
+}
+
+#header h1 {
+  padding: 0 20px;
+}
+
+#header h1 .logo {
+  width: 111px;
+  height: auto;
+}
+
+.top_dudadu_wrap {
+  padding: 0 20px;
+}
+
+
+
+.top_dudadu {
+  width: 100%;
+  height: auto;
+}
+
+.top_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+}
+.top_wrap .bg_linear {
+  width: 108%;
+  position: absolute;
+  left: -4%;
+  bottom: -50px;
+}
+
+
+.top_wrap .gif_glass {
+  padding: 8px;
+  flex-shrink: 0;
+  background: conic-gradient(from 180deg at 50% 50%,
+      rgba(221, 255, 219, 0.05) 133.26923489570618deg,
+      rgba(173, 255, 248, 0.05) 257.88461208343506deg);
+  stroke-width: 1px;
+  stroke: rgba(255, 255, 255, 0.12);
+  box-shadow: -4px -4px 4px 0px rgba(255, 255, 255, 0.2) inset,
+    1px 1px 1px 0px rgba(255, 255, 255, 0.25) inset;
+  filter: drop-shadow(0px 4px 8px rgba(103, 103, 103, 0.16));
+  backdrop-filter: blur(12px);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top_wrap .gif_glass {
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translate(0) translateY(0);
+  }
+
+  50% {
+    transform: translate(0) translateY(-20px);
+  }
+
+  100% {
+    transform: translate(0) translateY(0);
+  }
+}
+
+.gif_glass img {
+  width: 198px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.cont {
+  padding:0 20px 40px;
+  background: linear-gradient(#07082C 0%, #07082C 10%);
+  position: relative;
+}
+
+/* .cont::after {
+  display: block;
+  clear: both;
+  content: '';
+  position: absolute;
+  left: -2%;top: -180px;
+  background: url(../001-the-fool/img/bg_linear.png)no-repeat;
+  width: 104%;height: 200px;
+  background-size: 100%;
+} */
+
+.cont .tit {
+  
+  margin-bottom: 16px;
+}
+
+.cont .tit,
+.cont .tit p,
+.cont .tit b {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+.cont .tit p,
+.cont .tit b {
+  font-size: 24px;
+}
+
+.cont .tit b {
+  color: #42E3FF;
+}
+
+.box {
+  padding: 16px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  background: #484DBB;
+  border-radius: 28px;
+}
+
+.box_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.box.first {
+  margin-top: 8px;
+}
+
+.box.first .box-tit {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.box.first .box-txt {
+  font-family: "pretendard";
+  font-weight: 400;
+  color: #fff;
+  font-size: 16px;
+}
+
+.box.second .box-txt p {
+  font-family: "pretendard";
+  font-weight: 400;
+  color: #fff;
+}
+
+.box .tag_wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.box .tag {
+  font-family: "pretendard";
+  font-size: 12px;
+  padding: 4px 8px;
+  background: #BEC0F3;
+  color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.box.second .box-txt {
+  font-family: "pretendard";
+  color: #333;
+}
+
+.box .tag::before {
+  content: "#";
+  display: inline-block;
+  clear: both;
+}
+
+.box.second {
+  background: #1D2082;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 28px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(45deg, #60E2FF 0%, #0C3B93 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn_insta {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 18px;
+  border-radius: 28px;
+  background: linear-gradient(#449CBC, #1B1F87);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.36),
+    0px 4px 4px 0px rgba(213, 255, 202, 0.25) inset,
+    1px 1px 1px 0px rgba(255, 255, 255, 0.25) inset;
+}
+
+.btn_insta:hover {
+  background: #a13230;
+  transition: 0.5s;
+}
+
+.btn_insta .kor {
+  font-size: 18px;
+  color: #fff;
+}
+
+.btn_insta .eng {
+  font-size: 12px;
+  font-family: "Roboto";
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0;
+  opacity: 0.7;
+}
+
+.light {
+  mix-blend-mode: plus-lighter;
+  opacity: .6;
+  width: 140%;
+  position: absolute;
+  bottom: 70%;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+
+/* 반응형 */
+

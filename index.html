@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>두다두 랜덤 운세</title>
+  <script>
+    const pages = [
+      "./001-the-fool/index.html",
+      "./002-the-magician/index.html",
+      "./003-the-high-priestess/index.html",
+      "./004-the-empress/index.html",
+      "./005-the-emperor/index.html",
+      "./006-the-hierophant/index.html",
+      "./007-the-lovers/index.html",
+      "./008-the-chariot/index.html",
+      "./009-strength/index.html",
+      "./010-the-hermit/index.html",
+      "./011-wheel-of-fortune/index.html",
+      "./012-justice/index.html",
+      "./013-the-hanged-man/index.html",
+      "./014-death/index.html",
+      "./015-temperance/index.html",
+      "./016-the-devil/index.html",
+      "./017-the-tower/index.html",
+      "./018-the-star/index.html",
+      "./019-the-moon/index.html",
+      "./020-the-sun/index.html",
+      "./021-judgement/index.html",
+      "./022-the-world/index.html",
+      "./023-ace-of-wands/index.html",
+      "./024-two-of-wands/index.html",
+      "./025-three-of-wands/index.html",
+      "./026-four-of-wands/index.html",
+      "./027-five-of-wands/index.html",
+      "./028-six-of-wands/index.html",
+      "./029-seven-of-wands/index.html",
+      "./030-eight-of-wands/index.html",
+      "./031-nine-of-wands/index.html",
+      "./032-ten-of-wands/index.html",
+      "./033-page-of-wands/index.html",
+      "./034-knight-of-wands/index.html",
+      "./035-queen-of-wands/index.html",
+      "./036-king-of-wands/index.html",
+      "./037-ace-of-cups/index.html",
+      "./038-two-of-cups/index.html",
+      "./039-three-of-cups/index.html",
+      "./040-four-of-cups/index.html",
+      "./041-five-of-cups/index.html",
+      "./042-six-of-cups/index.html",
+      "./043-seven-of-cups/index.html",
+      "./044-eight-of-cups/index.html",
+      "./045-nine-of-cups/index.html",
+      "./046-ten-of-cups/index.html",
+      "./047-page-of-cups/index.html",
+      "./048-knight-of-cups/index.html",
+      "./049-queen-of-cups/index.html",
+      "./050-king-of-cups/index.html",
+      "./051-ace-of-swords/index.html",
+      "./052-two-of-swords/index.html",
+      "./053-three-of-swords/index.html",
+      "./054-four-of-swords/index.html",
+      "./055-five-of-swords/index.html",
+      "./056-six-of-swords/index.html",
+      "./057-seven-of-swords/index.html",
+      "./058-eight-of-swords/index.html",
+      "./059-nine-of-swords/index.html",
+      "./060-ten-of-swords/index.html",
+      "./061-page-of-swords/index.html",
+      "./062-knight-of-swords/index.html",
+      "./063-queen-of-swords/index.html",
+      "./064-king-of-swords/index.html",
+      "./065-ace-of-pentacles/index.html",
+      "./066-two-of-pentacles/index.html",
+      "./067-three-of-pentacles/index.html",
+      "./068-four-of-pentacles/index.html",
+      "./069-five-of-pentacles/index.html",
+      "./070-six-of-pentacles/index.html",
+      "./071-seven-of-pentacles/index.html",
+      "./072-eight-of-pentacles/index.html",
+      "./073-nine-of-pentacles/index.html",
+      "./074-ten-of-pentacles/index.html",
+      "./075-page-of-pentacles/index.html",
+      "./076-knight-of-pentacles/index.html",
+      "./077-queen-of-pentacles/index.html",
+      "./078-king-of-pentacles/index.html"
+    ];
+
+    window.onload = () => {
+      const randomIndex = Math.floor(Math.random() * pages.length);
+      setTimeout(() => {
+        window.location.href = pages[randomIndex];
+      }, 3000); // 3초 후 이동
+    };
+  </script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #fefae0;
+    }
+
+    img {
+      width: 100vw;
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <img src="img/webp.webp" alt="두다두 운세 이미지" />
+</body>
+</html>
